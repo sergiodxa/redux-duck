@@ -33,7 +33,7 @@
   "devDependencies": {
     "babel": "6.5.2",
     "babel-cli": "6.7.5",
-    "babel-core": "6.7.6",
+    "babel-core": "6.26.3",
     "babel-eslint": "6.0.3",
     "babel-plugin-transform-es2015-arrow-functions": "6.5.2",
     "babel-plugin-transform-es2015-block-scoping": "6.7.1",
