@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/PlatziDev/redux-duck/",
   "devDependencies": {
-    "babel": "6.5.2",
+    "babel": "6.23.0",
     "babel-cli": "6.7.5",
     "babel-core": "6.7.6",
     "babel-eslint": "6.0.3",
