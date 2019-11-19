@@ -1,5 +1,15 @@
 # redux-duck
 
+![CI Status](https://github.com/sergiodxa/redux-duck/workflows/CI/badge.svg)
+![Publish Status](https://github.com/sergiodxa/redux-duck/workflows/Publish/badge.svg)
+![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=sergiodxa/redux-duck)
+[![Maintainability](https://api.codeclimate.com/v1/badges/be75f5fbab018e9e27fa/maintainability)](https://codeclimate.com/github/sergiodxa/redux-duck/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/be75f5fbab018e9e27fa/test_coverage)](https://codeclimate.com/github/sergiodxa/redux-duck/test_coverage)
+![license](https://badgen.net/github/license/sergiodxa/redux-duck)
+![releases](https://badgen.net/github/releases/sergiodxa/redux-duck)
+![npm version](https://badgen.net/npm/v/sergiodxa/redux-duck)
+![dependencies](https://badgen.net/david/dep/sergiodxa/redux-duck)
+
 Helper function to create Redux modules using the [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux/) proposal.
 
 ## Installation
