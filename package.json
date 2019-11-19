@@ -43,7 +43,7 @@
     "babel-plugin-transform-es2015-shorthand-properties": "6.5.0",
     "babel-plugin-transform-es2015-template-literals": "6.6.5",
     "babel-plugin-transform-object-rest-spread": "6.6.5",
-    "eslint": "2.8.0",
+    "eslint": "2.13.1",
     "eslint-config-airbnb": "7.0.0",
     "eslint-plugin-jsx-a11y": "0.6.2",
     "eslint-plugin-react": "4.3.0",
