@@ -1,6 +1,6 @@
 {
   "name": "redux-duck",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Helper function to create Redux modules using the ducks-modular-redux proposal.",
   "main": "dist/index.js",
   "module": "dist/test-lib.esm.js",
