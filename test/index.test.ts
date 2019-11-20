@@ -79,7 +79,7 @@ describe('Redux Duck', () => {
   test('Create Reducer', () => {
     const duck = createDuck('duck-name', 'app-name');
     const type = duck.defineType('action-name');
-    const action = duck.createAction(type);
+    const action = duck.createAction<undefined, undefined>(type);
 
     const reducer = duck.createReducer<CountState>(
       {
