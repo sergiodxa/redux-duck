@@ -45,13 +45,15 @@ const ACTION_TYPE = myDuck.defineType("ACTION_TYPE");
 ### Create action creators
 
 ```ts
-const actionType = myDuck.createAction(ACTION_TYPE);
+const actionType = myDuck.createAction(ACTION_TYPE, false);
 ```
 
-- `createAction` receive just one argument.
+- `createAction` receive two arguments, the second argument is optional.
+- The first argument is the action type.
+- The second, and optional, argument is if the action will be an error one.
 - This argument should be the defined action type string.
-- It should return a function who will receive the action payload and return a valid (FSA compilant) action object.
-- The action creator will receive an optional argument with the action payload.
+- It will return a function who will receive the action payload and meta data and return a valid (FSA compilant) action object.
+- The action creator will receive two optional arguments, one with the action payload and another with the action meta data.
 
 ### Create reducer
 
