@@ -1,6 +1,5 @@
+import { AnyAction } from 'redux';
 import { createDuck } from '../src';
-
-type CountState = { count: number };
 
 describe('Redux Duck', () => {
   describe('Define Type', () => {
@@ -22,9 +21,7 @@ describe('Redux Duck', () => {
       const duck = createDuck('duck-name', 'app-name');
       const type = duck.defineType('action-name');
 
-      const action = duck.createAction<{ id: number }, { analytics: string }>(
-        type
-      );
+      const action = duck.createAction(type);
       expect(typeof action).toBe('function');
       expect(action()).toEqual({
         type,
@@ -50,10 +47,7 @@ describe('Redux Duck', () => {
       const duck = createDuck('duck-name', 'app-name');
       const type = duck.defineType('action-name');
 
-      const action = duck.createAction<{ id: number }, { analytics: string }>(
-        type,
-        true
-      );
+      const action = duck.createAction(type, true);
       expect(typeof action).toBe('function');
       expect(action()).toEqual({
         type,
@@ -79,9 +73,9 @@ describe('Redux Duck', () => {
   test('Create Reducer', () => {
     const duck = createDuck('duck-name', 'app-name');
     const type = duck.defineType('action-name');
-    const action = duck.createAction<undefined, undefined>(type);
+    const action = duck.createAction(type);
 
-    const reducer = duck.createReducer<CountState>(
+    const reducer = duck.createReducer(
       {
         [type]: state => {
           return {
@@ -94,7 +88,9 @@ describe('Redux Duck', () => {
 
     expect(typeof reducer).toBe('function');
     expect(reducer(undefined, action())).toEqual({ count: 1 });
-    expect(reducer({ count: 2 })).toEqual({ count: 2 });
+    expect(reducer({ count: 2 }, (undefined as unknown) as AnyAction)).toEqual({
+      count: 2,
+    });
   });
 
   describe('Errors', () => {
