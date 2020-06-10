@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/sergiodxa/redux-duck/",
   "devDependencies": {
-    "@types/jest": "^25.1.0",
+    "@types/jest": "^26.0.0",
     "husky": "^4.0.0",
     "tsdx": "^0.13.0",
     "tslib": "^2.0.0",
